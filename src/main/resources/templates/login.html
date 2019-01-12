@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Logowanie</title>
+</head>
+<body>
+<form action="#" th:action="@{/loginForm}" th:object="${loginForm}" method="post">
+    <table border="1">
+        <tr>
+            <td>Login</td>
+            <td><input type="text" th:field="${loginForm.login}"/></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="text" th:field="${loginForm.password}"/></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

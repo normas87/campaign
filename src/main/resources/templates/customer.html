@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Formularz rejestracji</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<form action="#" th:action="@{/customer/save}" th:object="${customer}" method="post">
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" th:field="${customer.name}"/></td>
+        </tr>
+        <tr>
+            <td>Last name</td>
+            <td><input type="text" th:field="${customer.lastName}"/></td>
+        </tr>
+        <tr>
+            <td>brand</td>
+            <td><input type="text" th:field="${customer.brand}"/></td>
+        </tr>
+        <tr>
+            <td>login</td>
+            <td><input type="text" th:field="${customer.login}"/></td>
+        </tr>
+        <tr>
+            <td>mail</td>
+            <td><input type="text" th:field="${customer.mail}"/></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td><input type="text" th:field="${customer.password}"/></td>
+        </tr>
+        <tr>
+            <td>confirm password</td>
+            <td><input type="text" th:field="${customer.confirmPassword}"/></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
